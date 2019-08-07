@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAC</title>
+    <link rel="stylesheet" href="/static/component.css" type="text/css"/>
+</head>
+<body>
+<div class="div_top">
+    <h2>
+        <ul>
+            <li><a href="/7660/config">config</a></li>
+            <li><a href="/7660/MSIM">MSIM</a></li>
+            <li><a href="/7660/SSIM">SSIM</a></li>
+            <li><a href="/7660/Linux_PC">Linux_PC</a> </li>
+        </ul>
+    </h2>
+</div>
+<div class="div_filter" name="rackname">
+    <label>search_rack</label>
+    <input type="text">
+</div>
+<div id ="mdiv" class="div_mid">
+    <table class="tb_mid">
+        <tr>
+            <th>MAC</th>
+            <th>Filesystem</th>
+            <th>Size</th>
+            <th>Used</th>
+            <th>Avail</th>
+            <th>Capacity</th>
+            <th>iused</th>
+            <th>ifree</th>
+            <th>%used</th>
+            <th>Mounted on</th>
+            <th>Status</th>
+        </tr>
+        {% for k,v in inf_dict.items %}
+        <tr class="tr_bgcolor">
+            <td>{{ k }}</td>
+        {% for l in v %}
+            <td>{{ l }}</td>
+        {% endfor%}
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+<script src="/static/outerjs.js" type="text/javascript"></script>
+</body>
+</html>
+</body>
+</html>

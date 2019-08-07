@@ -1,0 +1,75 @@
+.body_font{
+        font-family: Consolas;
+}
+.div_top{
+    height: 60px;
+    color: white;
+    background: #0000CC;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.div_filter{
+    font-size: 20px;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: 20px;
+}
+
+/*后代选择器*/
+ul li{
+    float: left;
+    width: 100px;
+    padding-top: 5px;
+}
+.div_mid{
+    position: fixed;
+    top: 110px;
+    right: 15px;
+    left: 15px;
+    overflow: scroll;
+}
+.tb_mid{
+    /*position: absolute;*/
+    top: 20px;
+    /*left: 10px;*/
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+tr th{
+        font-size: 15px;
+        background: #E0FFFF;
+}
+/*table,td,th的配置*/
+th,td{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 13px;
+    padding: 9px 9px;
+    white-space: nowrap;
+    }
+.td_font{
+}
+.td_font_1{
+}
+.tr_bgcolor{
+}
+.tr_bgcolor:hover{
+    background: #FFFF8F;
+}
+.td_section{
+}
+.td_time{
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+td a{
+    color: blue;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,8 @@
+
+Pinging BEJSRTL022.bj.intel.com [10.240.25.251] with 32 bytes of data:
+Reply from 10.240.25.251: bytes=32 time=502ms TTL=60
+
+Ping statistics for 10.240.25.251:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 502ms, Maximum = 502ms, Average = 502ms

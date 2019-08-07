@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>config</title>
+    <link rel="stylesheet" href="/static/component.css" type="text/css"/>
+</head>
+<body>
+<div class="div_top">
+    <h2>
+        <ul>
+            <li><a href="/7660/config">config</a></li>
+            <li><a href="/7660/MSIM">MSIM</a></li>
+            <li><a href="/7660/SSIM">SSIM</a></li>
+        </ul>
+    </h2>
+</div>
+<div class="div_filter" name="rackname">
+    <label>search_rack</label>
+    <input type="text">
+</div>
+<div id ="mdiv" class="div_mid">
+    <table class="tb_mid">
+        <tr>
+            <th>rack</th>
+            <th>baseline</th>
+            <th>platform</th>
+            <th>FTP</th>
+            <th>username</th>
+            <th>password</th>
+            <th>ping</th>
+            <!--<th>browsing</th>-->
+            <th>sim0_operator</th>
+            <th>sim0_num</th>
+            <th>sim0_ref</th>
+            <th>sim1_operator</th>
+            <th>sim1_num</th>
+            <th>sim1_ref</th>
+        </tr>
+        {% for k,v in inf_dict.items %}
+        <tr>
+            <td>{{ v.rack }}</td>
+            <td>{{ v.baseline }}</td>
+            <td>{{ v.platform }}</td>
+            <td>{{ v.FTP }}</td>
+            <td>{{ v.username }}</td>
+            <td>{{ v.password }}</td>
+            <td>{{ v.ping }}</td>
+           <!-- <td>{{ v.browsing }}</td>-->
+            <td>{{ v.sim0_operator }}</td>
+            <td>{{ v.sim0_num }}</td>
+            <td>{{ v.sim0_ref }}</td>
+            <td>{{v.sim1_operator}}</td>
+            <td>{{ v.sim1_num }}</td>
+            <td>{{ v.sim1_ref }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+ <!--   <table style="position: absolute; border: 1px solid black;top: 50px;left: 100px;right: 100px; height: 500; ">-->
+</div>
+<script src="/static/outerjs.js" type="text/javascript"></script>
+</body>
+</html>
